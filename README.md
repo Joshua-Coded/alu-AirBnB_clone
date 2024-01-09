@@ -1,12 +1,35 @@
-Hey Guys,
-Welcome to our Airbnb Clone. 
-In this project we were able to develop an Airbnb Clone application with Python. 
+# AirBnB clone Project 
 
-# Command Line Interpreter
-This a command line tool that would help us the developer to manage our project from the console. With this tool, we are able to create a database, update data in the database, remove objects from the database, exit the console and more....
+Project Description 
 
-# Usage
-To Start it -----> run ./console.py this will open up the console, and grant you access to create, add, remove and update. To exit the command line interpreter  ----> type ./exit
+Here, We'll be cloning the console part of the AirBnB clone Project.
 
-To use, type help and you will find sample usage with detail instructions.
+We'll be writing a command interpreter to manage our AirBnb objects.
+
+We'll need to 
+- put in place a parent class (called BaseModel) to take care of the 
+initialization, serialization and deserialization of your future instances 
+- create a simple flow of serialization/deserialization: Instance < - >
+Dictionary < - > json string < - > file
+- create all clases used for AirBnB(User,  State, City, Place...) that
+inherit from BaseModel
+- create the first abstracted storage engine of the project: File storage.
+- create all unittest to validate all our classes and storage engine.
+
+Our command interpreter would be able to:
+
+
+    - Create a new object(ex: a new User or a new Place)
+
+
+    - Retrieve an object from a file, a database etc...
+
+
+    - Do operations on objects(count, compute stats, etc...)
+
+
+    - Update attributes of an object
+
+
+    - Destroy an object 
 
