@@ -46,7 +46,7 @@ class BaseModel:
 
     def save(self):
         """Update the last variable"""
-        self.updated_at = datetime.datetime.utcnow()
+        self.updated_at = datetime.utcnow()
         models.storage.save()
 
     def to_dict(self):
