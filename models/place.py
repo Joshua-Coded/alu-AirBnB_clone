@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
-"""This file defines the Place Model
-It inherits from the BaseModel
+"""This files defines the place model
+it inherits from the basemodel
 """
 
 from models.base_model import BaseModel
@@ -9,9 +9,9 @@ from typing import List
 
 
 class Place(BaseModel):
-    """The Place Model"""
+    """the place model"""
 
-    # Attributes
+    #Attributes
     city_id: str = ""
     user_id: str = ""
     name: str = ""
@@ -22,4 +22,4 @@ class Place(BaseModel):
     price_by_night: int = 0
     latitude: float = 0.0
     longitude: float = 0.0
-    amenity_ids: List[str] = []
+    amenity_ids: list[str] = []
