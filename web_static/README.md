@@ -1,0 +1,1 @@
+hbnb web satic
