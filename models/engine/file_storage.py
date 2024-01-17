@@ -22,8 +22,8 @@ class FileStorage:
     """This class serve as an ORM to interface between or Storage System"""
 
     # class private variables
-    __objects: dict = {}
-    __file_path: str = "file.json"
+    __objects = {}
+    __file_path = "file.json"
 
     models = (
         "BaseModel",
