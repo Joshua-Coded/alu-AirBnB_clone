@@ -1026,7 +1026,7 @@ class TestHBNBCommand_update(unittest.TestCase):
             self.assertEqual(correct, output.getvalue().strip())
 
     def test_update_missing_attr_name_dot_notation(self):
-        correct = "** attribute name missing **"
+        correct = "** attribute name is missing **"
         with patch("sys.stdout", new=StringIO()) as output:
             self.assertFalse(HBNBCommand().onecmd("create BaseModel"))
             testId = output.getvalue().strip()
