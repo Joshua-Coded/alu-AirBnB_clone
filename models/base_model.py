@@ -11,6 +11,7 @@ import models
 
 class BaseModel:
 
+
     """Base class for all classes"""
 
     def __init__(self, *args, **kwargs):
@@ -29,7 +30,7 @@ class BaseModel:
             if key == '__class__':
                 continue
             self.__dict__[key] = val
-        
+   
         if 'created_at' in kwargs:
             self.created_at = datetime.strptime(kwargs['created_at'],
                                                 '%Y-%m-%dT%H:%M:%S.%f')
