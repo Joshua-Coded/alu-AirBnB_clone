@@ -11,5 +11,5 @@ from models.base_model import BaseModel
 class State(BaseModel):
     """The state model"""
 
-    #Attribute
-    name: str = ""
+    # Attribute
+    name = ""

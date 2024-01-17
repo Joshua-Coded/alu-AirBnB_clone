@@ -15,7 +15,7 @@ class BaseModel:
 
     def __init__(self, *args, **kwargs):
         """Constructor it either deserializes a serialized class or initialize a new instance"""
-        #initialize if nothing is passed
+        # initialize if nothing is passed
         if kwargs == {}:
             self.id = str(uuid4())
             self.created_at = datetime.datetime.now()
@@ -23,7 +23,7 @@ class BaseModel:
             models.storage.new(self)
             return
         
-        #using key words (deserialization)
+        # using key words (deserialization)
         for key, val in kwargs.items():
             if key == '__class__':
                 continue

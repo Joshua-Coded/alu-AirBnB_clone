@@ -11,8 +11,8 @@ from models.base_model import BaseModel
 class User(BaseModel):
     """ The user model"""
 
-    #Attributes
-    email: str = ""
-    password: str = ""
-    first_name: str = ""
-    last_name: str = ""
+    # Attributes
+    email = ""
+    password = ""
+    first_name = ""
+    last_name = ""

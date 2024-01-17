@@ -10,7 +10,7 @@ from models.base_model import BaseModel
 class Review(BaseModel):
     """the review model"""
 
-    #Attributes
-    place_id: str = ""
-    user_id: str = ""
-    text: str = ""
+    # Attributes
+    place_id = ""
+    user_id = ""
+    text = ""
