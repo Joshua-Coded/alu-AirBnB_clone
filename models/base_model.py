@@ -20,8 +20,8 @@ class BaseModel:
         # initialize if nothing is passed
         if kwargs == {}:
             self.id = str(uuid4())
-            self.created_at = datetime.datetime.now()
-            self.updated_at = datetime.datetime.now()
+            self.created_at = datetime.utcnow()
+            self.updated_at = datetime.utcnow()
             models.storage.new(self)
             return
 
