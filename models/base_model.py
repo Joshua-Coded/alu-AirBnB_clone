@@ -9,8 +9,8 @@ from uuid import uuid4
 from datetime import datetime
 import models
 
-class BaseModel:
 
+class BaseModel:
 
     """Base class for all classes"""
 
@@ -30,7 +30,7 @@ class BaseModel:
             if key == '__class__':
                 continue
             self.__dict__[key] = val
-   
+
         if 'created_at' in kwargs:
             self.created_at = datetime.strptime(kwargs['created_at'],
                                                 '%Y-%m-%dT%H:%M:%S.%f')
