@@ -11,5 +11,5 @@ class City(BaseModel):
     """The City Model"""
 
     # Attributes
-    name: str = ""
-    state_id: str = ""
+    name = ""
+    state_id = ""
