@@ -23,7 +23,7 @@ class FileStorage:
 
     # class private variables
     __objects: dict = {}
-    __file_path: str = "file.json"
+    __file_path = "file.json"
     models = (
         "BaseModel",
         "User", "City", "State", "Place",
