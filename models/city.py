@@ -8,7 +8,8 @@ from models.base_model import BaseModel
 
 
 class City(BaseModel):
-    """ The City Model"""
+    """The City Model"""
 
-    name = ""
-    state_id = ""
+    # Attributes
+    name: str = ""
+    state_id: str = ""

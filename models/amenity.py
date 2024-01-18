@@ -11,4 +11,4 @@ class Amenity(BaseModel):
     """The Amenity Model"""
 
     # Attributes
-    name = ""
+    name: str = ""
