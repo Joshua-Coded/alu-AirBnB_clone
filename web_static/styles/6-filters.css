@@ -41,8 +41,12 @@
 }
 
 .locations:hover .popover {
-    display: block;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
     z-index: 999;
+    margin-left: -30px;
+    
 }
 
 .amenities:hover .popover {
